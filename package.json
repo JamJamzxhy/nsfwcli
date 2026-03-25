@@ -1,0 +1,27 @@
+{
+  "name": "nsfwcli",
+  "version": "0.1.0",
+  "description": "AI-powered NSFW content search CLI",
+  "type": "module",
+  "bin": {
+    "nsfwcli": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "bun build src/cli.ts --outdir dist --target node",
+    "dev": "bun run src/cli.ts",
+    "test": "bun test",
+    "setup": "bun run src/cli.ts setup"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "openai": "^4.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.4.0"
+  },
+  "optionalDependencies": {
+    "playwright": "^1.58.2"
+  }
+}
