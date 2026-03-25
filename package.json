@@ -1,6 +1,6 @@
 {
   "name": "nsfwcli",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "AI-powered NSFW content search CLI",
   "type": "module",
   "bin": {
