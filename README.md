@@ -84,6 +84,33 @@ Edit `src/db/seed.json` and submit a PR. We need:
 - 100-200 popular actresses with all name variants
 - 5-10 representative works per actress
 
+## Changelog
+
+### v0.2.1 — Seed Database Expansion (2026-03-25)
+
+- **50 actresses** with full bilingual names and aliases (up from 5)
+- **254 videos** with rich metadata: studio, series, release date, duration
+- **Actress body/attribute tags** — search by cup size, body type, appearance (e.g. "巨乳", "slim", "F-cup")
+- **Video content tags** — roles, genres, settings, production type (e.g. "nurse", "NTR", "cosplay", "VR")
+- New `actress_tags` database table with case-insensitive index
+- Search engine now queries both video tags and actress tags simultaneously
+- LLM intent parser updated with body-characteristic examples
+
+### v0.2.0 — Download & bb-browser (2026-03-22)
+
+- Integrated bb-browser for Cloudflare bypass
+- Added `download` command and `--download` flag
+- Ad-free playback with referrer support (mpv/IINA/VLC)
+- Moonshot/custom OpenAI API compatibility (`OPENAI_BASE_URL`, `OPENAI_MODEL`)
+
+### v0.1.0 — Initial Release
+
+- Natural language search via OpenAI
+- Actress alias resolution
+- SpankBang adapter with Playwright fallback
+- Local SQLite database with seed data
+- Ad-free playback in local video player
+
 ## License
 
 MIT
